@@ -1,8 +1,8 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import { palette, SAVED_BUTTON_WIDTH, spaces } from '../assets/theme';
 import SavedPosts from './SavedPosts';
-import Animated, { FadeInDown, FadeInUp } from 'react-native-reanimated';
+import Animated, { FadeInDown } from 'react-native-reanimated';
 
 export const MainScreenHeader = () => {
     return (

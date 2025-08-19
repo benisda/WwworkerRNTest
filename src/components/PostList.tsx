@@ -17,8 +17,9 @@ const PostList = ({ onDelete, onSave, posts }: PostListProps) => {
             data={posts}
             itemLayoutAnimation={LinearTransition}
             keyExtractor={(item) => item.id.toString()+item.title}
-            renderItem={({ item }) => 
-            <PostCard post={item} onDelete={onDelete && (() => onDelete(item.id))} onSave={onSave && (() => onSave(item.id))} />}
+            renderItem={({ item }) => {
+                return <PostCard post={item} onDelete={onDelete && (() => onDelete(item.id))} onSave={onSave && (() => onSave(item.id))} />
+            }}
             contentContainerStyle={styles.flatList}
             showsVerticalScrollIndicator={true}
             scrollEventThrottle={16}
